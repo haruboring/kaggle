@@ -34,5 +34,5 @@ model.fit(X, y)
 predictions = model.predict(X_test)
 
 output = pd.DataFrame({"id": test_data.id, "likes": predictions})
-output.to_csv("output/keyword_dummies.csv", index=False)
+output.to_csv("output/keyword_dummies_tweet_length.csv", index=False)
 print("Your submission was successfully saved!")
